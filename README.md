@@ -1,3 +1,5 @@
+pip install game-sir-fixer
+
 Long story short:
 
 I bought this controller on Amazon because it was cheap.

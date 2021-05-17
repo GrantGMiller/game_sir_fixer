@@ -1,6 +1,6 @@
 import pygame
 import pyvjoy
-from helpers import ScaleFloatToHex, ScaleFloatToHexInvert, HandleJoyButton, HandleJoyHatMotion
+from game_sir_fixer.helpers import ScaleFloatToHex, ScaleFloatToHexInvert, HandleJoyButton, HandleJoyHatMotion
 
 pygame.init()
 
@@ -10,8 +10,9 @@ joysticks = [
 ]
 print(len(joysticks), 'controller detected')
 
-print('create a virtual controller')
+print('creating a virtual controller')
 c = pyvjoy.VJoyDevice(1)
+print('virtual controller is ready')
 while True:
     for event in pygame.event.get():
         if hasattr(event, 'joy') and event.joy == 0:
